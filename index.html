@@ -51,8 +51,7 @@
         <div class="mb-3 row">
           <label for="inputNumber1" class="col-md-2 col-form-label">Số thứ 1</label>
           <div class="col-md-10">
-            <input type="number" name="inputNumber1" class="form-control" id="inputNumber1" placeholder="Nhập số thứ 1"
-              step="any" required>
+            <input type="text" name="inputNumber1" class="form-control" id="inputNumber1" placeholder="Nhập số thứ 1" step="any">
             <div class="invalid-feedback" id="number1InvalidFeedback"></div>
           </div>
         </div>
@@ -60,8 +59,7 @@
         <div class="mb-3 row">
           <label for="inputNumber2" class="col-md-2 col-form-label">Số thứ 2</label>
           <div class="col-md-10">
-            <input type="number" name="inputNumber2" class="form-control" id="inputNumber2" placeholder="Nhập số thứ 2"
-              step="any" required>
+            <input type="text" name="inputNumber2" class="form-control" id="inputNumber2" placeholder="Nhập số thứ 2" step="any">
             <div class="invalid-feedback" id="number2InvalidFeedback"></div>
           </div>
         </div>
@@ -70,32 +68,34 @@
           <label for="operator" class="col-md-2 col-form-label">Phép tính</label>
           <div class="col-md-10" id="operator">
             <div class="form-check form-check-inline mb-0">
-              <input class="form-check-input" type="radio" name="operator" id="operatorSum" value="sum" required>
+              <input class="form-check-input" type="radio" name="operator" id="operatorSum" value="sum">
               <label class="form-check-label" for="operatorSum">
                 Cộng
               </label>
             </div>
 
             <div class="form-check form-check-inline mb-0">
-              <input class="form-check-input" type="radio" name="operator" id="operatorSub" value="sub" required>
+              <input class="form-check-input" type="radio" name="operator" id="operatorSub" value="sub">
               <label class="form-check-label" for="operatorSub">
                 Trừ
               </label>
             </div>
 
             <div class="form-check form-check-inline mb-0">
-              <input class="form-check-input" type="radio" name="operator" id="operatorMul" value="mul" required>
+              <input class="form-check-input" type="radio" name="operator" id="operatorMul" value="mul">
               <label class="form-check-label" for="operatorMul">
                 Nhân
               </label>
             </div>
 
             <div class="form-check form-check-inline mb-0">
-              <input class="form-check-input" type="radio" name="operator" id="operatorDiv" value="div" required>
+              <input class="form-check-input" type="radio" name="operator" id="operatorDiv" value="div">
               <label class="form-check-label" for="operatorDiv">
                 Chia
               </label>
             </div>
+
+            <div class="invalid-feedback" id="operatorInvalidFeedback"></div>
           </div>
         </div>
 
